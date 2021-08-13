@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+a.brand-logo {
+    font-family: "Permanent Marker", cursive;
+}
+
+a.brand-logo.left {
+    margin-left: 60px
+}
+
+/* nav style */
+
+#dropdownContent li a {
+    color: #42a5f5;
+}
+
+.collapsible .collapsible-header {
+    padding-left: 32px;
+}
+
+.collapsible .collapsible-body ul li a {
+    padding-left: 52px;
+}
+
+.collapsible .collapsible-body ul li.active {
+    background-color: #42a5f5!important;
+}
+
+ul.sidenav li.active-nav {
+    background-color: #e3e6eb7e;
+}
+
+/* nav style -end */
+
+
+#spinner:not([hidden]) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#spinner::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #1d7cf8;
+    border-radius: 100%;
+    will-change: transform;
+    animation: spin 1s infinite linear;
+    z-index: 10;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.team-list h5, .standings h5, .competitions h5 {
+    width: 70%;
+    margin: 50px auto 30px auto;
+    text-align: center;
+}
+
+.team-list .divider, .standings .divider, .competitions .divider {
+    width: 95%;
+    height: 3px;
+    margin: 0 auto 30px auto;
+    background-color: rgb(211, 214, 218);
+}
+
+.competitions-card-list.row .card .card-action, .team-card-list.row .card .card-action, .standings-competitions-list.row .card .card-action {
+    padding: .8em 0 .8em 2em;
+}
+
+.competitions-card-list.row .card .card-action a, .team-card-list.row .card .card-action a, .standings-competitions-list.row .card .card-action a {
+    color: rgb(136, 133, 133) !important;
+    font-size: .85em;
+    width: 720px;
+}
+
+.competitions-card-list.row .card .card-action a:hover, .team-card-list.row .card .card-action a:hover, .standings-competitions-list.row .card .card-action a:hover {
+    color: rgb(160, 158, 158) !important;
+    text-decoration: underline;
+}
+
+.competitions-card-list.row .card .card-content p, .team-card-list.row .card .card-content p, .standings-competitions-list.row .card .card-content p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;    
+}
+
+
+/* Match card */
+
+match-card .card .card-content {
+    padding: 10px;
+}
+
+match-card .col .card {
+    height: 360px;
+}
+
+.match-data-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.match-data-container .scheduled, .match-data-container .date {
+    flex-basis: 10%;
+    text-align: center;
+}
+
+.match-data-container .scheduled h6, .match-data-container .date h6 {
+    font-weight: 500;
+}
+
+.match-data-container .score-container {
+    flex-basis: 80%;
+    display: flex;
+}
+
+.match-data-container .score-container .homeTeam, .match-data-container .score-container .awayTeam {
+    flex-basis: 40%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.match-data-container .score-container .homeTeam div, .match-data-container .score-container .awayTeam div {
+    flex-grow: 1;
+}
+
+.match-data-container .score-container .vs-dash {
+    flex-basis: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-data-container .score-container .vs-dash div {
+    position: relative;
+    top: -11px;
+}
+
+/* Match card -end */
+
+/* Team Card */
+
+.team-list-content .card .card-image img, .fav-team-list .card .card-image img {
+    height: 230px;
+}
+
+.team-list-content .card .card-title, .fav-team-list .card .card-title {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.team-list-content .card .card-content, .fav-team-list .card .card-content {
+    padding-bottom: 0;
+}
+.team-list-content .card .card-action, .fav-team-list .card .card-action {
+    border: 0;
+    padding-top: 0;
+}
+
+team-card .card,  fav-team-card .card {
+    margin-bottom: 30px;
+}
+
+team-card .card img, fav-team-card .card img {
+    object-position: center;
+}
+
+team-card .card, fav-team-card .card {
+    height: 378px;
+}
+
+/* Team Card -end */
+
+/* Fav Team Card */
+
+.fav-team-list .noFavTeam {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Fav Team Card -end */
+
+/* Standings Table */
+
+standings-table table {
+    width: 90%;
+    margin: 0 auto 30px auto;
+}
+
+standings-table table .standingsGroup {
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* Standings Table -end */
+
+/* Squad table */
+squad-table table {
+    width: 80%;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+
+squad-table .text-lowercase {
+    text-transform: lowercase;
+}
+
+/* Squad table -end */
+
+
+.alert-box {
+    width: 75%;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    margin: 50px auto;
+    padding: 5px 0 17px;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 350px){
+    
+    standings-table table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 431px){
+    
+    a.brand-logo {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px){
+
+    match-card .col {
+        float: none;
+        margin: 0 auto;
+    }
+
+    /* Team card */
+
+    team-card .card, fav-team-card .card {
+        height: auto !important;
+    }
+
+    /* Team card -end */
+
+}

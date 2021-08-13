@@ -1,0 +1,101 @@
+
+.home {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home .bg-home {
+    position: absolute;
+    left: 0;
+    top: 7%;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/bg-home.jpeg');
+    background-size: cover;
+    z-index: -1;
+
+    opacity: 0.7;
+
+    filter: blur(1px);
+}
+
+.home .home-header {
+    margin-top: -35px;
+    height: 98vh;
+}
+
+.home .header-container {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    
+}
+
+.home .header-container h1 {
+    font-family: "Permanent Marker", cursive;
+}
+
+.home .header-container h1+p {
+    font-size: 17px;
+}
+
+.card-image img {
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-image span {
+    font-family: 'Roboto', sans-serif;
+    z-index: 2;
+}
+
+.card-image a {
+    width: 100%;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-list {
+    margin-top: 50px;
+}
+
+/* Row */
+.card-list .row .col{
+    float: none;
+    margin: 0 auto;
+}
+
+
+.fas.fa-chevron-right {
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+.card-action a:hover .fas.fa-chevron-right {
+    margin-left: 40px;
+    transition: .2s;
+}
+
+@media (max-width: 576px){
+
+    .home .header-container {
+        width: 80%;
+    }
+
+    img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .home .home-header {
+        height: 99vh;
+    }
+
+}
